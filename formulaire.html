@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="stylesheet" href="agenda.css">
+		<meta charset="utf-8"/>
+        <title>Agenda</title>
+
+    </head>
+<body>
+    <header>
+        <h1><a href="agenda.html">Agenda Emmanuel</a></h1>
+    </header>
+    <main>
+        <div class="grey">
+            <div class="cyan">
+                <h2>Ajouter un évènement</h2>
+                <div class="form">
+                        <label for="date">Date et heure du début</label>
+                </div>
+                <div>
+                    <input type="datetime-local" id="date" name="date" min="2020-10-21T00:00" max="2021-10-21T00:00">
+                </div>
+                <div>
+                    <label for="datefin">Date et heure de fin</label>
+                </div>
+                <div>
+                    <input type="datetime-local" id="datefin" name="date" min="2020-10-21T00:00" max="2021-10-21T00:00">
+                </div>
+                <div>
+                    <label for="description">Description</label>
+                </div>
+                <div>
+                    <textarea name="description" id="description" cols="30" rows="5"></textarea required>
+                </div>
+                <div>
+                    <select name="categorie" id="categorie">
+                        <option value="">Catégorie</option>
+                            <option value="important">Important</option>
+                            <option value="loisirs">Loisirs</option>
+                            <option value="prive">Privé</option>
+                            <option value="travail">Travail</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="ajouter"></label>
+                    <input type="submit" name="ajouter" id="ajouter" formaction="agenda.html" inputmode="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
+
+
+
+    
